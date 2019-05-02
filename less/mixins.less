@@ -1,11 +1,20 @@
 // Mixins in here
 
-.makeButtons(@width, @color, @bgColor, @borderRadius, @fontSize) {
-    width: @width;
-    background-color: @bgColor;
-    border-radius: @borderRadius;
-    font-size: @fontSize;
-
+.makeButtons(@width, @bgColor, @borderRadius, @fontSize, @textAlign, @padding, @color, @cursor) {
+        width: @width;
+        background-color: @bgColor;
+        border-radius: @borderRadius;
+        font-size: @fontSize;
+        text-align: @textAlign;
+        padding: @padding;
+        color: @color;
+        cursor: @cursor;
 }
 
+
+/*
+
+.makeButtons(100px, yellow, 5px, 15px)
+
+*/
 
