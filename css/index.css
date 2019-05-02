@@ -241,6 +241,7 @@ header .header-inner {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
+    padding: 3%;
   }
 }
 .home .content-section .text-content {
@@ -300,7 +301,7 @@ header .header-inner {
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
-    padding: 1%;
+    padding: 3%;
   }
 }
 .home .content-pick .destination {
