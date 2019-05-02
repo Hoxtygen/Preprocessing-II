@@ -1,3 +1,27 @@
+header  {
+  border-bottom: 2px dashed @navigation-border;
+
+  .header-inner   {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+
+    @media @mobile  {
+      flex-direction: column;
+    }
+  }
+}
+
+.logo   {
+  @media @mobile  {
+    text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  }
+  
+}
+
+
 .home {
 
   .content-section {
@@ -5,17 +29,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-right: 1%;
+    padding-left: 1%;
 
+    @media @mobile  {
+      flex-direction: column;
+      padding: 3%;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile  {
+        width: 100%;
+        padding: 1%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile  {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
 
       img {
         border-radius: 10px;
@@ -36,6 +77,9 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile  {
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -53,9 +97,22 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile  {
+      flex-direction: column;
+      padding: 3%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile  {
+        width: 100%;
+      }
     }
   }
 }// home
+
+.btn    {
+  .makeButtons(100%, #008080, 10px, 2em, center, 1.5rem .6rem, #fff, pointer)
+}
